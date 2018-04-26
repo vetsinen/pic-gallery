@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 1. Link to jQuery (1.8 or later), -->
+<script src="jquery.min.js"></script> <!-- 33 KB -->
+
+<!-- fotorama.css & fotorama.js. -->
+<link  href="fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="fotorama.js"></script> <!-- 16 KB -->
+
+<!-- 2. Add images to <div class="fotorama"></div>. -->
+<div style="max-width: 400px">
+    <div class="fotorama"
+         data-auto="false"
+         data-keyboard="true"
+         data-startindex="5"
+         data-width="100%"
+         data-arrows="always"
+         data-click="true"
+         data-fit="cover"
+         data-nav="thumbs">
+        <img src="company3-bg.jpg">
+        <img src="location3.jpg">
+        <img src="location5.jpg">
+    </div>
+</div>
+
+
+
+<script>
+    $(function () {
+        $('.fotorama').fotorama();
+    })
+</script>
+<!-- 3. Enjoy! --></body>
+</html>

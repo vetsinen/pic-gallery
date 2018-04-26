@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body>
-<!-- 1. Link to jQuery (1.8 or later), -->
-<script src="jquery.min.js"></script> <!-- 33 KB -->
 
-<!-- fotorama.css & fotorama.js. -->
-<link  href="fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="fotorama.js"></script> <!-- 16 KB -->
 
-<!-- 2. Add images to <div class="fotorama"></div>. -->
-<div class="fotorama"
-     data-startindex="5"
-     data-width="800"
-     data-height="600"
-     data-arrows="true"
-     data-click="true"
-     data-swipe="true"
-     data-nav="thumbs">
-    <img src="company3-bg.jpg">
-    <img src="location3.jpg">
-    <img src="location5.jpg">
-    <img src="erp-system.jpg">
-    <img src="location9.jpg">
-    <img src="geolocation-system.jpg">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<div class="slide">
+
 </div>
+<div class="nav">
+    <div>your 1</div>
+    <div>your 2</div>
+    <div>your 3</div>
+    <div>your 4</div>
+    <div>your 5</div>
+</div>
+<script>
+    $(document).ready(function(){
 
-<!-- 3. Enjoy! --></body>
+        $('.slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+
+        $('.nav').slick({
+            slidesToShow: 3,
+            centerMode: true,
+    });
+    });
+</script>
+</body>
 </html>

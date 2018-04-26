@@ -1,0 +1,22 @@
+{
+  "name": "pic-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fotorama.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetsinen/pic-gallery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vetsinen/pic-gallery/issues"
+  },
+  "homepage": "https://github.com/vetsinen/pic-gallery#readme",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
